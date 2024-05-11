@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div>
+        <div>
+            <input type="text" id="password">
+            <input id="range" type="range" min="8" max="24">
+            
+            <button id="generateBtn" onclick="generatePassword()">Generate</button>
+            <div class="checkBox-Container">
+                <div id="rangeValueDiv">
+                  <!-- Range value -->
+                  <p>Character Length:<span id="rangeValue"></span></p>
+                </div>
+                <div class="row">
+                    <p>Contains Lowercase Letters (a-z)</p>
+                    <input type="checkbox" id="lowercase" checked>
+                  </div>
+                  <div class="row">
+                    <p>Contains Uppercase Letters (A-Z)</p>
+                    <input type="checkbox" id="uppercase" checked>
+                  </div>
+                  <div class="row">
+                    <p>Contains Numbers (0-9)</p>
+                    <input type="checkbox" id="number" checked>
+                  </div>
+                  <div class="row">
+                    <p>Contains Symbols (@#%$)</p>
+                    <input type="checkbox" id="symbol" checked>
+                  </div>
+              </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
