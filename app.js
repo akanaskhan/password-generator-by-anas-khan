@@ -22,6 +22,8 @@ var allNumber = "0123456789";
 var lowerChars = "abcdefghijklmnopqrstuvwxyz";
 var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+
+
 function generatePassword(){
     var generatePass = "";
     var allChars = "";

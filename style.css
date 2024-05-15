@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161363.jpg);
+  background-repeat:;
+  color: #ffff !important;
+}
+
+.container {
+  width: 100%;
+
+}
+
+.box {
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  margin: 50px auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.demo-Heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #ffff;
+}
+
+#demo {
+  padding: 10px 20px;
+  border: 1px solid #15b100;
+  background: transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  height: 40px;
+  transition: all 0.3s linear;
+}
+
+#demo:hover {
+  background-color: #ffa400;
+  color: #fff;
+}
+
+.box h1 {
+  font-size: 2.5em;
+}
+
+.display {
+  position: relative;
+}
+
+#password {
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  font-size: 24px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #15b10070;
+  border: 1px solid #15b100;
+}
+
+#password::placeholder{
+  color: #ffffffa8;
+}
+.passIcon {
+  padding: 10px 15px;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+i.p-hidden {
+  display: none;
+}
+
+.dialogueBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  user-select: none;
+}
+
+.copy,
+.copied {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  border: 1px solid #ffa400;
+}
+
+.copy:hover {
+  background-color: #ffa400;
+  color: #fff;
+}
+
+.copied {
+  display: none;
+}
+
+.copied:hover {
+  cursor: url("checkdouble.svg"), auto;
+}
+
+.strongPass > i {
+  color: green;
+}
+
+.strongPass,
+.weakPass,
+.empty,
+.emptyCheckBox {
+  display: none;
+}
+
+.weakPass > i {
+  color: #ff5733;
+}
+
+.empty {
+  color: red;
+}
+
+#range {
+  margin-top: 15px;
+  width: 100%;
+}
+
+span#rangeValue {
+  margin-left: 5px;
+  font-weight: 600;
+}
+#rangeValueDiv{
+  align-items: center;
+}
+#rangeLength{
+  margin-bottom: 0;
+}
+.checkBox-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  user-select: none;
+}
+
+.checkboxes {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxes input[type="checkbox"] {
+  margin: 0 3px 0 10px;
+}
+
+#generateBtn {
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s linear;
+  border: 1px solid #15b100;
+  background-color: #15b100;
+  font-weight: 500;
+}
+
+#generateBtn:hover {
+  background-color: #15b100;
+  color: #fff;
+}
+
+.rights{
+  width: 100%;
+}
+.text{
+  margin-top: 4%;
+  margin-bottom: 0;
+  color: #15b100;
+  text-align: center;
+  text-shadow: 0 0 5px #15b100, 0 0 5px #15b100, 0 0 40px #15b100, 0 0 50px #15b100, 0 0 60px #15b100;;
+
+  /* animation: glow 1s ease-in-out infinite alternate; */
+}
+
+/* @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+} */
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .box h1 {
+    font-size: 2em;
+  }
+
+  #generateBtn {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #password::placeholder {
+    font-size: 18px;
+  }
+  .checkBox-Container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  label {
+    width: max-content;
+  }
+}
